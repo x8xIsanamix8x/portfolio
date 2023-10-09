@@ -3,19 +3,19 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import {FaTwitter, FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
-import devbanner from '../assets/devbanner.jpg'
+import devbanner from '../assets/devbanner.png'
 
 
 export const Main = () => {
   return (
     <div id='main'>
         <img 
-        className='object-cover' 
+        className='object-cover w-full h-screen ' 
         src={ devbanner } 
         alt='/'
         />
         <div className='w-full h-screen object-cover absolute top-0'>
-            <div className='max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center'>
+            <div className='max-w-[700px] m-64 h-f64 flex flex-col justify-center lg:items-start items-center'>
                 <h1 className='sm:text-5xl text-4xl font-bold text-gray-800 text-white'>I'm José Goncalves</h1>
                 <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800 text-white'>
                     I'm a
