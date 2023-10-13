@@ -3,48 +3,47 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import {FaTwitter, FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
-import devbanner from '../assets/devbanner.png'
+import Ellipse from '../assets/Ellipse.png'
+import Descargas from '../assets/descargas.png'
 
 
 export const Main = () => {
   return (
-    <div id='main'>
-        <img 
-        className='object-cover w-full h-screen ' 
-        src={ devbanner } 
-        alt='/'
-        />
-        <div className='w-full h-screen object-cover absolute top-0'>
-            <div className='max-w-[700px] m-64 h-64 flex flex-col justify-center lg:items-start items-center'>
-                <h1 className='sm:text-5xl text-4xl font-bold text-gray-800 text-white'>I'm José Goncalves</h1>
-                <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800 text-white'>
-                    I'm a
-                    <TypeAnimation
-                        sequence={[
-                            'Developer',
-                            2000,
-                            'UX',
-                            2000,
-                            'Project Manager',
-                            2000,
-                        ]}  
-                        wrapper='div'
-                        cursor={true}
-                        repeat={Infinity}
-                        style={{ fontSize: '1em', paddingLeft: '5px' }}
+    <div id='main' className="m-auto md:pl-20 p-4 py-16 grid grid-cols-2 object-cover space-x-32 w-full h-screen container content-between flex justify-center mx-auto sm:py-12 ">
+            
+            <div>
+                <img 
+                    className='pt-32 lg:ml-32 object-cover m-max  max-w-xl justify-center lg:items-start items-center rounded-full lg:text-right' 
+                    src={ Ellipse } 
+                    alt='/'
                     />
-                </h2>
-                <div className='flex justify-between pt-6 max-w-[200px] w-full'>
-                    <FaTwitter className='cursor-pointer text-white' size={20}/>
-                    <FaFacebook className='cursor-pointer text-white' size={20}/>
-                    <FaInstagram className='cursor-pointer text-white' size={20}/>
-                    <FaLinkedinIn className='cursor-pointer text-white' size={20}/>
-                </div>
             </div>
 
+            <div className=" flex flex-col justify-center  text-center rounded-sm lg:max-w-xs xl:max-w-lg lg:text-left">
+                <h1 className="m:text-5xl text-4xl font-bold text-gray-800 pt-4">
+                    Hi, my name is José Goncalves,
+                </h1>
+                <p className="flex mt-6 mb-8 text-lg sm:mb-12 pt-4">
+                    Full Stack Web Developer with a Passion for creating Engage and User Experiences. Let´s JOIN forces and bring your digital
+                    dreams to frution, get in touch, and let´s embark on this exciting journey together.
+                </p>
 
+                <div className='flex items-stretch content-between space-x-6'>
+                    <button className='flex justify-center bg-[#040404] text-gray-100 mt-4 w-full p-4 rounded-lg'>
+                        Resume
+                        <img className="flex mx-2 mt-1 content-between" src={Descargas} />
+                    </button>
+                    <button className='text-black outline outline-[#040404] mt-4 w-full p-4 rounded-lg'>
+                        Contact
+                    </button>
+                </div>
+
+            </div>
+
+            
+            
+            
         </div>
-    </div>
   )
 }
 
