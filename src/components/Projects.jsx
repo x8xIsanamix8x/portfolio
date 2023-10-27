@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProjectsItems } from './ProjectsItems'
-import Canaimaproject from '../assets/Canaimaproject.png'
+import CanaimaGNULinux from '../assets/CanaimaGNULinux.png'
 import HomeborProject from '../assets/HomeborProject.png'
 import Gamezone from '../assets/Gamezone.png'
 import StoreProject from '../assets/StoreProject.png'
@@ -18,7 +18,7 @@ export const Projects = () => {
             commodi delectus voluptates aliquid! Id, at? Cum, velit?
         </p>
         <div className='grid sm:grid-cols-2 gap-12'>
-            <ProjectsItems img={Canaimaproject} title='Distribution Canaima' />
+            <ProjectsItems img={CanaimaGNULinux} title='Distribution Canaima' />
             <ProjectsItems img={HomeborProject} title='Homebor Platform' />
             <ProjectsItems img={Gamezone} title='GameZone Project' />
             <ProjectsItems img={StoreProject} title='Store Project' />

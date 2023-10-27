@@ -3,37 +3,56 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import {FaTwitter, FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
-import Ellipse from '../assets/Ellipse.png'
+import Profilecartoon from '../assets/Profilecartoon.jpg'
 import Descargas from '../assets/descargas.png'
 
 
 export const Main = () => {
   return (
-    <div id='main' className="m-auto md:pl-20 p-4 py-16 grid grid-cols-2 object-cover space-x-32 w-full h-screen container content-between flex justify-center mx-auto sm:py-12 ">
+    <div id='main' className="relative h-screen flex flex-col lg:flex-row">
             
-            <div>
+            <div className='w-full lg:w-1/2 h-1/2 lg:h-full p-2 sm:p-4 lg:p-8 flex justify-center items-center'>
                 <img 
-                    className='pt-32 lg:ml-32 object-cover m-max  max-w-xl justify-center lg:items-start items-center rounded-full lg:text-right' 
-                    src={ Ellipse } 
+                    className='object-contain w-full md:w-auto h-full ' 
+                    src={ Profilecartoon } 
                     alt='/'
                     />
             </div>
 
-            <div className=" flex flex-col justify-center  text-center rounded-sm lg:max-w-xs xl:max-w-lg lg:text-left">
-                <h1 className="m:text-5xl text-4xl font-bold text-gray-800 pt-4">
+            <div className=" w-full lg:w-1/2 h-1/2 lg:h-full sm:p-8 flex flex-col justify-center items-center">
+                <h1 className="text-4xl text-3x1 font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-0 text-center">
                     Hi, my name is José Goncalves,
                 </h1>
-                <p className="flex mt-6 mb-8 text-lg sm:mb-12 pt-4">
-                    Full Stack Web Developer with a Passion for creating Engage and User Experiences. Let´s JOIN forces and bring your digital
-                    dreams to frution, get in touch, and let´s embark on this exciting journey together.
+
+                <h2 className='flex text-3xl text-2x1 pt-2 sm:pt-4 '>
+                    I'm a
+                    <TypeAnimation 
+                        sequence={[
+                            'FullStack',
+                            2000,
+                            'UX',
+                            2000,
+                            'Project Manager',
+                            2000,
+                        ]}
+                        wrapper='div'
+                        repeat={ Infinity }
+                        cursor={true}
+                        style={{fontSize: '0.9em', paddingLeft: '5px' }}
+                    />
+                </h2>
+
+                <p className="flex mt-2 m-8 text-lg sm:mb-12 pt-4 items-justify">
+                    Full Stack Web Developer with a Passion for creating Engage and User Experiences. Let's JOIN forces and bring your digital
+                    dreams to frution, get in touch, and let's embark on this exciting journey together.
                 </p>
 
-                <div className='flex items-stretch content-between space-x-6'>
-                    <button className='flex justify-center bg-[#040404] text-gray-100 mt-4 w-full p-4 rounded-lg'>
+                <div className='flex  items-center sm:flex-row justify-center justify-between space-x-4 sm:space-x-6'>
+                    <button className='flex bg-[#040404] text-white w-full sm:w-auto px-6 py-3 rounded-lg '>
                         Resume
-                        <img className="flex mx-2 mt-1 content-between" src={Descargas} />
+                        <img className="ml-2 mt-1" src={Descargas} />
                     </button>
-                    <button className='text-black outline outline-[#040404] mt-4 w-full p-4 rounded-lg'>
+                    <button className='text-black outline outline-[#040404] w-full sm:w-auto px-6 py-3 rounded-lg'>
                         Contact
                     </button>
                 </div>

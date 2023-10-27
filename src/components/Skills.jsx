@@ -26,14 +26,14 @@ export const Skills = () => {
 
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
-                <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Skills</h1>
-                <p className='text-center py-8'>// These are the technologies I-ve worked with</p>
+                <h1 className='text-4xl font-bold text-start text-[#001b5e] inline border-b-4 border-[#001b5e]'>Skills</h1>
+                <p className='text-center py-8 text-start'>// These are the technologies I-ve worked with</p>
             </div>
 
-            <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+            <div className='w-full grid grid-cols-2 sm:grid-cols-7 gap-4 text-center py-8'>
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='mx-auto' src={ HTML } alt='HTML iCON' />
-                    <p className='my-4'>HTML 5</p>
+                    <p className='my-4'>HTML</p>
                 </div>
 
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
