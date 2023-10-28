@@ -2,8 +2,12 @@ import React from 'react'
 import { ProjectsItems } from './ProjectsItems'
 import CanaimaGNULinux from '../assets/CanaimaGNULinux.png'
 import HomeborProject from '../assets/HomeborProject.png'
-import Gamezone from '../assets/Gamezone.png'
-import StoreProject from '../assets/StoreProject.png'
+import Project6 from '../assets/project6.png'
+import Project5 from '../assets/project5.png'
+import Project4 from '../assets/project4.png'
+import Project3 from '../assets/project3.png'
+import Project2 from '../assets/project2.png'
+
 
 export const Projects = () => {
   return (
@@ -12,16 +16,22 @@ export const Projects = () => {
             Projects
         </h1>
         <p className='text-center py-8'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Et tenetur aperiam id sit omnis hic labore velit mollitia
-            distinctio repellendus reprehenderit reiciendis,
-            commodi delectus voluptates aliquid! Id, at? Cum, velit?
+        In my portfolio, you will find a curated collection of projects that represent
+        my journey as a developer. These projects reflect my dedication to crafting functional 
+        and visually appealing solutions. From web applications to mobile apps, each project 
+        showcases my passion for innovation and user-centric design. 
+        I take pride in the diverse range of work I've accomplished, 
+        and I'm excited to share it with you.
         </p>
         <div className='grid sm:grid-cols-2 gap-12'>
-            <ProjectsItems img={CanaimaGNULinux} title='Distribution Canaima' />
             <ProjectsItems img={HomeborProject} title='Homebor Platform' />
-            <ProjectsItems img={Gamezone} title='GameZone Project' />
-            <ProjectsItems img={StoreProject} title='Store Project' />
+            <ProjectsItems img={CanaimaGNULinux} title='Distribution Canaima' />
+            <ProjectsItems img={Project6} title='Jobsearch' />
+            <ProjectsItems img={Project5} title='Agenda Project' />
+            <ProjectsItems img={Project3} title='Search Hero' />
+            <ProjectsItems img={Project4} title='Gif App' />
+            <ProjectsItems img={Project2} title='Calendar App' />
+            
 
         </div>
 

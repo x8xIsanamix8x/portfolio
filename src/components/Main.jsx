@@ -1,4 +1,5 @@
 import React from 'react'
+import 'animate.css';
 
 import { TypeAnimation } from 'react-type-animation'
 import {FaTwitter, FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
@@ -13,14 +14,14 @@ export const Main = () => {
             
             <div className='w-full lg:w-1/2 h-1/2 lg:h-full p-2 sm:p-4 lg:p-8 flex justify-center items-center'>
                 <img 
-                    className='object-contain w-full md:w-auto h-full ' 
+                    className='animate__animated animate__rotateInDownLeft object-contain w-full md:w-auto h-full ' 
                     src={ Profilecartoon } 
                     alt='/'
                     />
             </div>
 
             <div className=" w-full lg:w-1/2 h-1/2 lg:h-full sm:p-8 flex flex-col justify-center items-center">
-                <h1 className="text-4xl text-3x1 font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-0 text-center">
+                <h1 className="animate__animated animate__slideInDown text-4xl text-3x1 font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-0 text-center">
                     Hi, my name is José Goncalves,
                 </h1>
 
@@ -48,9 +49,9 @@ export const Main = () => {
                 </p>
 
                 <div className='flex  items-center sm:flex-row justify-center justify-between space-x-4 sm:space-x-6'>
-                    <button className='flex bg-[#040404] text-white w-full sm:w-auto px-6 py-3 rounded-lg '>
+                    <button className='flex bg-[#040404] text-white w-full sm:w-auto px-6 py-3 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700'>
                         Resume
-                        <img className="ml-2 mt-1" src={Descargas} />
+                        <img className="ml-2 mt-1 animate-bounce" src={Descargas} />
                     </button>
                     <button className='text-black outline outline-[#040404] w-full sm:w-auto px-6 py-3 rounded-lg'>
                         Contact

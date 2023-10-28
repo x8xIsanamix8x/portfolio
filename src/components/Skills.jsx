@@ -52,30 +52,20 @@ export const Skills = () => {
                 </div>
 
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='mx-auto' src={ PHP } alt='HTML iCON' />
-                    <p className='my-4'>PHP</p>
-                </div>
-            
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='mx-auto' src={ MYSQL } alt='HTML iCON' />
-                    <p className='my-4'>MYSQL</p>
-                </div>
-            
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='mx-auto' src={ MongoDB } alt='HTML iCON' />
-                    <p className='my-4'>MongoDB</p>
-                </div>
-            
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='mx-auto' src={ Express } alt='HTML iCON' />
-                    <p className='my-4'>Express</p>
-                </div>
-
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='mx-auto' src={ Reactcode } alt='HTML iCON' />
                     <p className='my-4'>React / React Native</p>
                 </div>
-            
+
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img className='mx-auto' src={ Tailwindcss } alt='HTML iCON' />
+                    <p className='my-4'>TailwindCSS</p>
+                </div>
+
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img className='mx-auto' src={ PHP } alt='HTML iCON' />
+                    <p className='my-4'>PHP</p>
+                </div>
+
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='mx-auto' src={ Graphqlcode } alt='HTML iCON' />
                     <p className='my-4'>Graphql</p>
@@ -95,15 +85,21 @@ export const Skills = () => {
                     <img className='mx-auto' src={ Nodecode } alt='HTML iCON' />
                     <p className='my-4'>Node</p>
                 </div>
+
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img className='mx-auto' src={ Express } alt='HTML iCON' />
+                    <p className='my-4'>Express</p>
+                </div>
             
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='mx-auto' src={ Tailwindcss } alt='HTML iCON' />
-                    <p className='my-4'>TailwindCSS</p>
+                    <img className='mx-auto' src={ MYSQL } alt='HTML iCON' />
+                    <p className='my-4'>MYSQL</p>
                 </div>
-
-                
-
-
+            
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img className='mx-auto' src={ MongoDB } alt='HTML iCON' />
+                    <p className='my-4'>MongoDB</p>
+                </div>
 
             </div>
 
