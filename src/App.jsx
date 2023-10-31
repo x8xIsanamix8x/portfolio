@@ -5,6 +5,7 @@ import { Work }  from './components/Work'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import { Skills } from './components/Skills'
+import { Courses } from './components/Courses'
 
 export const App = () => {
 
@@ -15,7 +16,9 @@ export const App = () => {
       <Skills />
       <Work />
       <Projects />
+      <Courses />
       <Contact />
+    
     </div>
   )
 }

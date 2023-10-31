@@ -22,7 +22,7 @@ import Firebasecode from '../assets/skillslogo/Firebasecode.png'
 
 export const Skills = () => {
   return (
-    <div name='skills' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+    <div name='skills' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16 w-full sm:-w-1/2 '>
 
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
