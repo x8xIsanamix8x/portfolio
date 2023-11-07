@@ -14,8 +14,8 @@ export const App = () => {
       <Sidenav />
       <Main />
       <Skills />
-      <Work />
       <Projects />
+      <Work />
       <Courses />
       <Contact />
     

@@ -31,8 +31,10 @@ const data = [
 
 export const Work = () => {
   return (
-    <div id='work' className='max-w-[1040px] m-auto p-4 py-16 flex flex-col'>
-        <h1 className='text-4xl font-bold text-center text-[#001b5e] py-8'>Work Experience</h1>
+    <div id='works' className='max-w-[1040px] m-auto p-4 py-16 flex flex-col'>
+        <div className='mx-5 mb-20'>
+          <h1 className='text-4xl font-bold text-start text-[#001b5e] inline border-b-4 border-[#001b5e]'>Work Experience</h1>
+        </div>
         {data.map((item, idx) => (
             <WorkItem 
                 key={idx} 

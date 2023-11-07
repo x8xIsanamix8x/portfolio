@@ -11,9 +11,9 @@ import Project2 from '../assets/project2.png'
 export const Projects = () => {
   return (
     <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
-        <h1 className='text-4xl font-bold text-center text-[#001b5e]'>
-            Projects
-        </h1>
+        <div className='mx-5 mb-12'>
+          <h1 className='text-4xl font-bold text-start text-[#001b5e] inline border-b-4 border-[#001b5e]'>Projects</h1>
+        </div>
         <p className='text-justify py-8'>
         In my portfolio, you will find a curated collection of projects that represent
         my journey as a developer. These projects reflect my dedication to crafting functional 
