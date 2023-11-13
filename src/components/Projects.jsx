@@ -6,6 +6,12 @@ import Project5 from '../assets/project5.png'
 import Project4 from '../assets/project4.png'
 import Project3 from '../assets/project3.png'
 import Project2 from '../assets/project2.png'
+import uxproject1 from '../assets/ux-project1.png'
+import uxproject2 from '../assets/ux-project2.png'
+import uxproject3 from '../assets/ux-project3.png'
+import uxproject4 from '../assets/ux-project4.png'
+import uxproject5 from '../assets/ux-project5.png'
+
 
 import {
   Tabs,
@@ -19,24 +25,33 @@ import { useState } from 'react'
 
 export const Projects = () => {
 
+  const [activeTab, setActiveTab] = useState('Dev');
 
+  const categories = ['Dev', 'UX'];
 
-  const [activeTab, setActiveTab] = useState(1);
+  const projects = {
+    Dev: [
+      { id: 1, src: HomeborProject, title: 'Homebor Platform'}, 
+      { id: 2, src: CanaimaGNULinux, title: 'Distribution Canaima'},
+      { id: 3, src: Project6, title: 'Jobsearch'},
+      { id: 4, src: Project5, title: 'Agenda Project'},
+      { id: 5, src: Project3, title: 'Search Hero'},
+      { id: 6, src: Project4, title: 'Gif App'},
+      { id: 7, src: Project2, title: 'Calendar App'},
+    ],
+    UX: [
+      { id: 1, src: uxproject1, title: 'Homebor Web' },
+      { id: 2, src: uxproject2, title: 'Homebor Movil' },
+      { id: 3, src: uxproject3, title: 'Store Project' },
+      { id: 4, src: uxproject4, title: 'VideoGame Zone' },
+      { id: 5, src: uxproject5, title: 'BarberShop' },
+    ],
+  };
 
-  const categories = [
-    { id: 1, categorie: 'Dev'},
-    { id: 2, categorie: 'UX'}
-  ]
+  const handleTabChange = (category) => {
+    setActiveTab(category);
+  };
 
-  const data = [
-    { id: 1, src: HomeborProject, title: 'Homebor Platform', cat: 'Dev'}, 
-    { id: 2, src: CanaimaGNULinux, title: 'Distribution Canaima' , cat: 'Dev'},
-    { id: 3, src: Project6, title: 'Jobsearch', cat: 'UX'},
-    { id: 4, src: Project5, title: 'Agenda Project', cat: 'UX'},
-    { id: 5, src: Project3, title: 'Search Hero', cat: 'UX'},
-    { id: 6, src: Project4, title: 'Gif App', cat: 'UX'},
-    { id: 7, src: Project2, title: 'Calendar App', cat: 'UX'},
-  ]
 
   return (
     <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
@@ -52,26 +67,28 @@ export const Projects = () => {
         and I'm excited to share it with you.
         </p>
 
-          <Tabs>
-            <TabsHeader className="bg-gray-50"
-              
+        <Tabs>
+        <TabsHeader className="bg-gray-50">
+          {categories.map((category) => (
+            <Tab
+              key={category}
+              value={category}
+              onClick={() => setActiveTab(category)}
+              className={activeTab === category ? "border-b-2 border-[#001b5e] text-gray-900" : ""}
             >
-              {categories.map(({ id, categorie }) => (
-                <Tab key={id} value={categorie} onClick={() => setActiveTab(id)}
-                className={activeTab === id ? "border-b-2 border-[#001b5e] text-gray-900" : ""}>
-                  {categorie}
-                </Tab>
-              ))}
-            </TabsHeader>
-            <TabsBody className='grid sm:grid-cols-2 gap-12 py-8' 
-            >
-              {data.map(({ id, title, src, cat }) => (
-                <TabPanel key={id} value={cat}>
-                    <ProjectsItems img={src} title={title} />
-                </TabPanel>
-              ))}
-            </TabsBody>
-          </Tabs>
+              {category}
+            </Tab>
+          ))}
+        </TabsHeader>
+        <TabsBody className='grid sm:grid-cols-2 gap-12 py-8'>
+          {projects[activeTab].map(({ id, src, title }) => (
+            <TabPanel key={id} value={activeTab}>
+              <ProjectsItems img={src} title={title} />
+            </TabPanel>
+          ))}
+        </TabsBody>
+      </Tabs>
+
 
     </div>
   )
