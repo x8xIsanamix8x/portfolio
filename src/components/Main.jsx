@@ -19,13 +19,13 @@ export const Main = () => {
       </div>
 
       <div className="w-full lg:w-1/2 h-1/2 lg:h-full sm:p-8 flex flex-col justify-center items-center">
-        <h1 className="animate__animated animate__slideInDown text-4xl text-3x1 font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-0 text-center">
+        <h1 className="animate__animated animate__fadeInDown text-4xl text-3x1 font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-0 text-center">
           Hi, my name is José Goncalves,
         </h1>
 
-        <h2 className='flex text-3xl text-2x1 pt-2 sm:pt-4 '>
+        <h2 className='flex text-3xl text-2x1 pt-2 sm:pt-4 animate__animated animate__fadeInLeft'>
           I'm a
-          <TypeAnimation
+          <TypeAnimation 
             sequence={['FullStack', 2000, 'UX', 2000, 'Project Manager', 2000]}
             wrapper='div'
             repeat={Infinity}
@@ -33,7 +33,7 @@ export const Main = () => {
             style={{ fontSize: '0.9em', paddingLeft: '5px' }}
           />
         </h2>
-        <p className="flex mt-1 mb-8 mx-5 text-lg sm:mb-12 pt-4 items-justify text-justify">
+        <p className="flex mt-1 mb-8 mx-5 text-lg sm:mb-12 pt-4 items-justify text-justify animate__animated animate__fadeInRight">
         I'm delighted to welcome you to my portfolio. I'm a passionate Full Stack web developer witg a diverse range of skills and industry experience.
         </p>
 

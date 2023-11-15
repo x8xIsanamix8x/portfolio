@@ -1,4 +1,14 @@
+import { useState } from 'react'
+import {
+  Tabs,
+  TabsHeader,
+  TabsBody,
+  Tab,
+  TabPanel,
+} from "@material-tailwind/react";
+
 import { ProjectsItems } from './ProjectsItems'
+
 import CanaimaGNULinux from '../assets/CanaimaGNULinux.png'
 import HomeborProject from '../assets/HomeborProject.png'
 import Project6 from '../assets/project6.png'
@@ -11,17 +21,6 @@ import uxproject2 from '../assets/ux-project2.png'
 import uxproject3 from '../assets/ux-project3.png'
 import uxproject4 from '../assets/ux-project4.png'
 import uxproject5 from '../assets/ux-project5.png'
-
-
-import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-} from "@material-tailwind/react";
-
-import { useState } from 'react'
 
 export const Projects = () => {
 
