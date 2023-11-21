@@ -47,10 +47,6 @@ export const Projects = () => {
     ],
   };
 
-  const handleTabChange = (category) => {
-    setActiveTab(category);
-  };
-
 
   return (
     <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
@@ -66,7 +62,8 @@ export const Projects = () => {
         and I'm excited to share it with you.
         </p>
 
-        <Tabs>
+
+        <Tabs value={ activeTab }>
         <TabsHeader className="bg-gray-50">
           {categories.map((category) => (
             <Tab

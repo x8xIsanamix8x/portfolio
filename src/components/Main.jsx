@@ -18,8 +18,8 @@ export const Main = () => {
         />
       </div>
 
-      <div className="w-full lg:w-1/2 h-1/2 lg:h-full sm:p-8 flex flex-col justify-center items-center">
-        <h1 className="animate__animated animate__fadeInDown text-4xl text-3x1 font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-0 text-center">
+      <div className="w-full lg:w-1/2 h-1/2 lg:h-full sm:p-8 flex flex-col justify-center items-start">
+        <h1 className="animate__animated animate__fadeInDown text-4xl text-3x1 font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-0 text-start">
           Hi, my name is José Goncalves,
         </h1>
 
@@ -33,7 +33,7 @@ export const Main = () => {
             style={{ fontSize: '0.9em', paddingLeft: '5px' }}
           />
         </h2>
-        <p className="flex mt-1 mb-8 mx-5 text-lg sm:mb-12 pt-4 items-justify text-justify animate__animated animate__fadeInRight">
+        <p className="flex mt-1 mb-8 text-lg sm:mb-12 pt-4 items-justify text-start animate__animated animate__fadeInRight">
         I'm delighted to welcome you to my portfolio. I'm a passionate Full Stack web developer witg a diverse range of skills and industry experience.
         </p>
 
