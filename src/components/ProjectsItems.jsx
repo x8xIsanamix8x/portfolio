@@ -1,13 +1,16 @@
 import React from 'react'
 
-export const ProjectsItems = ({img, title}) => {
+export const ProjectsItems = ({img, title, url}) => {
   return (
     
-    <div className='flex flex-col bg-gradient-to-r bg-[#001b5e] rounded-xl overflow-hidden border-2 border-gray drop-shadow-2xl transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300'>
+    <div className='flex flex-col bg-gradient-to-r bg-[#001b5e] rounded-xl overflow-hidden border-2 border-gray drop-shadow-2xl transition ease-in-out  hover:-translate-y-1 hover:scale-105 duration-300'>
         <img src= {img} className='object-cover h-fit m-auto' />
         <div className='px-5 py-4'>
             <h4 className='text-2xl font-medium text-white'>{title}</h4>
-            <a className='inline-flex place-items-end mt-4 px-4 py-3 font-semibold text-m text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300'>
+            <a className='inline-flex place-items-end mt-4 px-4 py-3 font-semibold text-m text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300'
+            href={url}
+            target="_blank"
+            >
                 View Demo
             </a>
         </div>

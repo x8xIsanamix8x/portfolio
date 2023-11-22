@@ -30,20 +30,20 @@ export const Projects = () => {
 
   const projects = {
     Dev: [
-      { id: 1, src: HomeborProject, title: 'Homebor Platform'}, 
-      { id: 2, src: CanaimaGNULinux, title: 'Distribution Canaima'},
-      { id: 3, src: Project6, title: 'Jobsearch'},
-      { id: 4, src: Project5, title: 'Agenda Project'},
-      { id: 5, src: Project3, title: 'Search Hero'},
-      { id: 6, src: Project4, title: 'Gif App'},
-      { id: 7, src: Project2, title: 'Calendar App'},
+      { id: 1, src: HomeborProject, title: 'Homebor Platform', url: 'https://homebor.com'}, 
+      { id: 2, src: CanaimaGNULinux, title: 'Distribution Canaima', url: 'https://canaima.softwarelibre.gob.ve/'},
+      { id: 3, src: Project6, title: 'Jobsearch', url: 'https://jobsearch-tailwindcss.onrender.com'},
+      { id: 4, src: Project5, title: 'Agenda Project', url: ' https://journal-app-zm12.onrender.com/ '},
+      { id: 5, src: Project3, title: 'Search Hero', url: 'https://heroes-app-6grs.onrender.com/'},
+      { id: 6, src: Project4, title: 'Gif App', url: 'https://gif-app-tbc0.onrender.com'},
+      { id: 7, src: Project2, title: 'Calendar App', url: 'https://calendar-mern-c0lb.onrender.com/'},
     ],
     UX: [
-      { id: 1, src: uxproject1, title: 'Homebor Web' },
-      { id: 2, src: uxproject2, title: 'Homebor Movil' },
-      { id: 3, src: uxproject3, title: 'Store Project' },
-      { id: 4, src: uxproject4, title: 'VideoGame Zone' },
-      { id: 5, src: uxproject5, title: 'BarberShop' },
+      { id: 1, src: uxproject1, title: 'Homebor Web', url: 'https://www.figma.com/file/xidbBfJqLkD1Qf9jRZrPot/HomeborWeb?type=design&node-id=0%3A1&mode=design&t=skv70itXNHDJseB9-1' },
+      { id: 2, src: uxproject2, title: 'Homebor Movil', url: 'https://www.figma.com/file/WL4GfgvWO9lsr7NkjXuIGp/CalendarApp?type=design&node-id=0%3A1&mode=design&t=uxBA5vJjgS6p7b1Q-1' },
+      { id: 3, src: uxproject3, title: 'Store Project', url: 'https://www.figma.com/file/nw4FoLwcyAHheWMzs9dU6t/StoreProject?type=design&node-id=0%3A1&mode=design&t=d6pdGutA2rqtysdT-1' },
+      { id: 4, src: uxproject4, title: 'VideoGame Zone', url: 'https://www.figma.com/file/bAiZnUUiqlGq5plybO8exZ/VideogameZone?type=design&node-id=0%3A1&mode=design&t=tgKqCEytuIAafvk7-1' },
+      { id: 5, src: uxproject5, title: 'BarberShop', url: 'https://www.figma.com/file/Uxne9HCf60qNkxjkPPLEGz/BarberShop-Canada?type=design&node-id=0%3A1&mode=design&t=krzJKZlLgRjTjclE-1' },
     ],
   };
 
@@ -77,9 +77,9 @@ export const Projects = () => {
           ))}
         </TabsHeader>
         <TabsBody className='grid sm:grid-cols-2 gap-12 py-8'>
-          {projects[activeTab].map(({ id, src, title }) => (
+          {projects[activeTab].map(({ id, src, title, url }) => (
             <TabPanel key={id} value={activeTab}>
-              <ProjectsItems img={src} title={title} />
+              <ProjectsItems img={src} title={title} url={url} />
             </TabPanel>
           ))}
         </TabsBody>
