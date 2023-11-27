@@ -39,7 +39,7 @@ export const Main = () => {
           />
         </h2>
         <p className="flex mt-1 mb-8 text-lg sm:mb-12 pt-4 items-justify text-center sm:text-left animate__animated animate__fadeInRight">
-          I'm delighted to welcome you to my portfolio. I'm a passionate Full Stack web developer with a diverse range of skills and industry experience.
+          I am thrilled to welcome you to my portfolio. As a passionate Full Stack web and mobile developer, I bring a diverse range of skills and extensive industry experience.        
         </p>
 
         <div className='flex items-center sm:flex-row justify-center justify-between space-x-4 sm:space-x-6'>
