@@ -39,7 +39,7 @@ export const Skills = () => {
 
   return (
 
-    <div id='about' className='max-w-screen-2xl flex flex-col xl:flex-row xl:justify-center items-center xl:items-start gap-12 w-full py-16 px-8 sm:px-12'>
+    <div id='about' className='max-w-screen-2xl mx-auto flex flex-col xl:flex-row xl:justify-center items-center xl:items-start gap-12 w-full py-16 px-8 sm:px-12'>
 
       <div className='flex-1 flex flex-col gap-4 text-center xl:text-left'>
 
@@ -67,6 +67,7 @@ export const Skills = () => {
       </div>
 
     </div>
+
 
 
 
