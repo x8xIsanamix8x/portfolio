@@ -4,6 +4,9 @@ import { Main } from './components/Main'
 import { Work }  from './components/Work'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
+import { Skills } from './components/Skills'
+import { Courses } from './components/Courses'
+import { Footer } from './components/Footer'
 
 export const App = () => {
 
@@ -11,9 +14,13 @@ export const App = () => {
     <div>
       <Sidenav />
       <Main />
-      <Work />
+      <Skills />
       <Projects />
+      <Work />
+      <Courses />
       <Contact />
+      <Footer />
+    
     </div>
   )
 }
