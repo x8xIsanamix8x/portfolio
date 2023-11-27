@@ -44,7 +44,7 @@ export const Main = () => {
         </p>
 
         <div className='flex items-center sm:flex-row justify-center justify-between space-x-4 sm:space-x-6'>
-          <a href="https://drive.google.com/file/d/1QFTA0eJuvbxyWUF_QLmexfomUvef8_pR/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className='flex bg-blue-700 text-white w-full sm:w-auto px-6 py-3 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700'>
+          <a href="https://drive.google.com/file/d/11bsil4kYlGysLUDW_QqjUTtl1xDZASqK/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='flex bg-blue-700 text-white w-full sm:w-auto px-6 py-3 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700'>
             Resume
             <img className="ml-2 mt-1 animate-bounce" src={Descargas} alt="Descargas Icon" />
           </a>
