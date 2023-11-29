@@ -25,7 +25,7 @@ export const Main = () => {
 
       <div className="w-full lg:w-1/2 h-1/2 lg:h-full sm:p-8 flex flex-col justify-center items-center sm:items-start">
         <h1 className="animate__animated animate__fadeInDown text-4xl text-3xl font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-0 text-center sm:text-left">
-          Hi, my name is José Goncalves,
+          Hi, my name is José Goncalves
         </h1>
 
         <h2 className='flex text-3xl text-2xl pt-2 sm:pt-4 animate__animated animate__fadeInLeft text-center sm:text-left'>

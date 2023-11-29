@@ -40,7 +40,7 @@ export const Projects = () => {
     ],
     UX: [
       { id: 1, src: uxproject1, title: 'Homebor Web', url: 'https://www.figma.com/file/xidbBfJqLkD1Qf9jRZrPot/HomeborWeb?type=design&node-id=0%3A1&mode=design&t=skv70itXNHDJseB9-1' },
-      { id: 2, src: uxproject2, title: 'Homebor Movil', url: 'https://www.figma.com/file/WL4GfgvWO9lsr7NkjXuIGp/CalendarApp?type=design&node-id=0%3A1&mode=design&t=uxBA5vJjgS6p7b1Q-1' },
+      { id: 2, src: uxproject2, title: 'Homebor Mobile', url: 'https://www.figma.com/file/WL4GfgvWO9lsr7NkjXuIGp/CalendarApp?type=design&node-id=0%3A1&mode=design&t=uxBA5vJjgS6p7b1Q-1' },
       { id: 3, src: uxproject3, title: 'Store Project', url: 'https://www.figma.com/file/nw4FoLwcyAHheWMzs9dU6t/StoreProject?type=design&node-id=0%3A1&mode=design&t=d6pdGutA2rqtysdT-1' },
       { id: 4, src: uxproject4, title: 'VideoGame Zone', url: 'https://www.figma.com/file/bAiZnUUiqlGq5plybO8exZ/VideogameZone?type=design&node-id=0%3A1&mode=design&t=tgKqCEytuIAafvk7-1' },
       { id: 5, src: uxproject5, title: 'BarberShop', url: 'https://www.figma.com/file/Uxne9HCf60qNkxjkPPLEGz/BarberShop-Canada?type=design&node-id=0%3A1&mode=design&t=krzJKZlLgRjTjclE-1' },
