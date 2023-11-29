@@ -14,7 +14,7 @@ export const Main = () => {
   };
 
   return (
-    <div id='main' className="relative w-screen min-h-screen h-screen flex flex-col lg:flex-row">
+    <div id='main' className="relative min-h-screen h-screen flex flex-col lg:flex-row">
       <div className='lg:w-1/2 h-1/2 lg:h-full p-2 sm:p-4 lg:p-8 flex justify-center items-center'>
         <img
           className='animate__animated animate__rotateInDownLeft object-contain w-full md:w-auto h-full '
