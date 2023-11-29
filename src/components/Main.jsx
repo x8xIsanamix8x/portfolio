@@ -15,7 +15,7 @@ export const Main = () => {
 
   return (
     <div id='main' className="relative w-screen min-h-screen h-screen flex flex-col lg:flex-row">
-      <div className='w-full lg:w-1/2 h-1/2 lg:h-full p-2 sm:p-4 lg:p-8 flex justify-center items-center'>
+      <div className='lg:w-1/2 h-1/2 lg:h-full p-2 sm:p-4 lg:p-8 flex justify-center items-center'>
         <img
           className='animate__animated animate__rotateInDownLeft object-contain w-full md:w-auto h-full '
           src={Profilecartoon}
@@ -23,7 +23,7 @@ export const Main = () => {
         />
       </div>
 
-      <div className="w-full lg:w-1/2 h-1/2 lg:h-full sm:p-8 flex flex-col justify-center items-center sm:items-start">
+      <div className="lg:w-1/2 h-1/2 lg:h-full sm:p-8 flex flex-col justify-center items-center sm:items-start">
         <h1 className="animate__animated animate__fadeInDown text-4xl text-3xl font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-0 text-center sm:text-left">
           Hi, my name is José Goncalves
         </h1>
