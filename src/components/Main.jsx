@@ -14,13 +14,12 @@ export const Main = () => {
   };
 
   return (
-    <div id='main' className="relative min-h-screen h-screen flex flex-col lg:flex-row">
-      <div className='lg:w-1/2 h-1/2 lg:h-full p-2 sm:p-4 lg:p-8 flex justify-center items-center'>
-        <img
-          className='animate__animated animate__rotateInDownLeft object-contain w-full md:w-auto h-full '
-          src={Profilecartoon}
-          alt='/'
-        />
+    <div id='main' className="relative min-h-screen h-screen flex flex-col lg:flex-row bg-gradient-to-r from-violet-200 to-pink-200">
+      <div className='lg:w-1/2 h-1/2 lg:h-full p-2 sm:p-4 lg:p-8 flex justify-center items-center'> 
+        <img 
+        className='animate__animated animate__rotateInDownLeft object-contain rounded-full mb-5 w-full h-auto'
+        src={Profilecartoon} 
+        alt='/' /> 
       </div>
 
       <div className="lg:w-1/2 h-1/2 lg:h-full sm:p-8 flex flex-col justify-center items-center sm:items-start">
@@ -39,11 +38,15 @@ export const Main = () => {
           />
         </h2>
         <p className="flex mt-1 mb-8 text-lg sm:mb-12 pt-4 items-justify text-center sm:text-left animate__animated animate__fadeInRight">
-          I am thrilled to welcome you to my portfolio. As a passionate Full Stack web and mobile developer, I bring a diverse range of skills and extensive industry experience.        
+          I'm a Full Stack Developer. I am thrilled to welcome you to my portfolio. As a passionate Full Stack web 
+          and mobile developer, I bring a diverse range of skills and extensive industry experience.        
         </p>
 
         <div className='flex items-center sm:flex-row justify-center justify-between space-x-4 sm:space-x-6'>
-          <a href="https://drive.google.com/file/d/1ZzjehyE1qUN_ccwsOwsdQVTgUwpnmMP0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='flex bg-blue-700 text-white w-full sm:w-auto px-6 py-3 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700 items-center
+          <a 
+          href="https://drive.google.com/file/d/1dSsKpDUyjX5x5agfesB4lobXAnVjtU1p/view?usp=sharing" 
+          target="_blank" rel="noopener noreferrer" 
+          className='flex bg-blue-700 text-white w-full sm:w-auto px-6 py-3 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700 items-center
 justify-center'>
             Resume
             <img className="ml-2 mt-1 animate-bounce" src={Descargas} alt="Descargas Icon" />

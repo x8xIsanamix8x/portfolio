@@ -54,12 +54,10 @@ export const Projects = () => {
           <h1 className='text-4xl font-bold text-start text-[#001b5e] inline border-b-4 border-[#001b5e]'>Projects</h1>
         </div>
         <p className='text-justify py-8'>
-        In my portfolio, you will find a curated collection of projects that represent
-        my journey as a developer. These projects reflect my dedication to crafting functional 
-        and visually appealing solutions. From web applications to mobile apps, each project 
-        showcases my passion for innovation and user-centric design. 
-        I take pride in the diverse range of work I've accomplished, 
-        and I'm excited to share it with you.
+        In my portfolio, you will find a meticulously curated collection of projects that represent my journey as a developer. 
+        These works embody my commitment to creating both functional and visually appealing solutions. From web applications 
+        to mobile apps, each project highlights my passion for innovation and user-centric design. I take immense pride in the 
+        diverse range of work I've accomplished and am thrilled to share it with you.
         </p>
 
 

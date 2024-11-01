@@ -48,9 +48,9 @@ export const Skills = () => {
         </div>
 
         <p className='flex mt-1 mb-8 mx-2 sm:mx-5 text-lg sm:mb-12 pt-4 items-center text-justify'>
-          I'm a creative engineer, dedicated to crafting engaging and user-friendly experiences. With
-          several years of a career in the web development world, I've had the privilege to work across various areas,
-          from UI design to the implementation of robust technical solutions.
+        As a creative engineer, I specialize in designing engaging and user-friendly experiences. 
+        With several years in the web development industry, I've had the privilege of working across various areas, 
+        from UI design to implementing robust technical solutions.
         </p>
 
       </div>
